@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.accordion-button {
+    background: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .accordion-button:hover {
+    background: #f5f5f5;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .accordion-collapse {
+    overflow: hidden;
+    transition: max-height 0.2s ease;
+  }
+  
+  .accordion-collapse.show {
+    max-height: 1000px; /* Adjust based on content height */
+  }
+  
+  .accordion-collapse:not(.show) {
+    max-height: 0;
+  }
+  

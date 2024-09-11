@@ -50,7 +50,7 @@ export const Hero = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`absolute inset-0 flex items-center p-20 transition-opacity duration-1000 ${
+              className={`absolute inset-0 flex items-center p-[200px] transition-opacity duration-1000 ${
                 index === currentSlide ? "opacity-100 z-10" : "opacity-0"
               }`}
               style={{

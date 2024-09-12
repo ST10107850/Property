@@ -8,8 +8,8 @@ import property6 from "../assets/images/property-06.jpg";
 const PropertiesSection = () => {
   return (
     <div className="properties section py-16">
-      <div className="container mx-auto">
-        <div className="flex justify-center mb-12">
+      <div className="container md:mx-auto mx-12">
+        <div className="flex justify-center mb-12 ">
           <div className="w-full lg:w-2/3 text-center">
             <div className="section-heading flex flex-col items-center">
               <h6 className="text-[#f35525] text-base font-bold uppercase">| Properties</h6>

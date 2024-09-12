@@ -1,6 +1,11 @@
-// import React from 'react'
+import { HiBars3CenterLeft } from "react-icons/hi2";
+import { useState } from "react";
 
 export const NavBar = () => {
+  const [isMenuBarOpen, setMenuBarOpen] = useState(false);
+
+  const toogleMenuBar = () => setMenuBarOpen(!isMenuBarOpen);
+
   return (
     <header className="bg-white shadow-md sticky top-0 z-50 h-auto">
       <div className="container mx-auto px-4">
@@ -12,8 +17,8 @@ export const NavBar = () => {
             </a>
             {/* ***** Logo End ***** */}
 
-            {/* ***** Menu Start ***** */}
-            <ul className="hidden md:flex space-x-8 text-gray-600 md:items-center">
+            {/* ***** Menu Start (Desktop) ***** */}
+            <ul className="hidden md:flex space-x-8 text-xl text-gray-600 md:items-center">
               <li>
                 <a href="index.html" className="text-[#f35525] font-semibold">
                   Home
@@ -49,12 +54,43 @@ export const NavBar = () => {
             </ul>
 
             {/* ***** Menu Trigger for Mobile ***** */}
-            <a className="menu-trigger md:hidden flex items-center">
-              <span className="text-gray-900">Menu</span>
-            </a>
-            {/* ***** Menu End ***** */}
+            <button
+              className="menu-trigger md:hidden flex items-center"
+              onClick={toogleMenuBar}
+            >
+              <span className="text-gray-900">
+                <HiBars3CenterLeft className="text-4xl mr-4 font-bold" />
+              </span>
+            </button>
           </nav>
         </div>
+
+        {/* ***** Mobile Menu (below logo) ***** */}
+        {isMenuBarOpen && (
+          <ul className="flex flex-col pb-3 space-y-4 text-xl text-gray-600 mt-4 md:hidden">
+            <li>
+              <a href="index.html" className="text-[#f35525] font-semibold">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="properties.html" className="hover:text-[#f35525]">
+                Properties
+              </a>
+            </li>
+            <li>
+              <a href="property-details.html" className="hover:text-[#f35525]">
+                Property Details
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" className="hover:text-[#f35525]">
+                Contact Us
+              </a>
+            </li>
+            
+          </ul>
+        )}
       </div>
     </header>
   );

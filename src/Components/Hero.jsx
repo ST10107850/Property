@@ -45,12 +45,12 @@ export const Hero = () => {
 
   return (
     <div className="relative overflow-hidden">
-      <div className="relative w-full h-[100vh]">
+      <div className="relative w-full h-[70vh] md:h-[100vh]">
         <div className="absolute inset-0">
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`absolute inset-0 flex items-center p-[200px] transition-opacity duration-1000 ${
+              className={`absolute inset-0 flex items-center justify-center md:justify-start p-10 md:p-[200px] transition-opacity duration-1000 ${
                 index === currentSlide ? "opacity-100 z-10" : "opacity-0"
               }`}
               style={{
@@ -59,12 +59,12 @@ export const Hero = () => {
                 backgroundPosition: "center",
               }}
             >
-              <div className="text-white p-8 w-72">
-                <p className="block text-lg mb-2 w-auto bg-white text-black py-1 pl-2">
+              <div className="text-white p-8 w-60 md:w-72">
+                <p className="block md:text-lg mb-2 w-auto bg-white text-black py-1 pl-2">
                   {slide.text}
                   <span className="text-[#f35525]">, {slide.county}</span>
                 </p>
-                <h2 className="text-6xl font-bold leading-tight w-96">
+                <h2 className="text-4xl md:text-6xl font-bold leading-tight md:w-96">
                   {slide.heading}
                 </h2>
               </div>

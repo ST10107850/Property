@@ -23,14 +23,14 @@ export const VideoSection = () => {
         </div>
       </div>
 
-      <div className="video-content mt-[-150px]">
+      <div className="video-content mt-[-210px] ">
         <div className="container mx-auto">
           <div className="flex justify-center">
-            <div className="relative lg:w-10/12">
+            <div className="relative lg:max-w-[1076px] ">
               <img
                 src={videoFrame}
                 alt="Video Frame"
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
               />
               <a
                 href="https://youtube.com"
@@ -51,9 +51,9 @@ export const VideoSection = () => {
 
       <div className="fun-facts py-16 bg-gray-100">
         <div className="container mx-auto">
-          <div className="flex flex-wrap justify-center">
-            <div className="lg:w-[270px] mr-[200px] w-full text-center p-4 relative">
-              <div className="bg-[#f35525] w-[50px] h-[50px] rounded-full absolute top-[-25px] right-[-25px]"></div>
+          <div className="flex flex-wrap md:flex-row items-center justify-center">
+            <div className="lg:w-[270px] md:mr-[200px] w-full text-center p-4 relative">
+              <div className="bg-[#f35525] w-[50px] h-[50px] hidden lg:block rounded-full absolute top-[-25px] right-[-25px]"></div>
               <div className="counter w-[270px] flex flex-row  justify-center rounded-md py-4 bg-[#FFEEE9] relative z-10">
                 <h2
                   className="text-[40px] font-bold text-[#f35525] mr-[25px]"
@@ -69,8 +69,8 @@ export const VideoSection = () => {
                 </p>
               </div>
             </div>
-            <div className="lg:w-[270px] mr-[200px] w-full text-center p-4 relative">
-              <div className="bg-[#f35525] w-[50px] h-[50px] rounded-full absolute top-[-25px] right-[-25px]"></div>
+            <div className="lg:w-[270px] md:mr-[200px] w-full text-center p-4 relative">
+              <div className="bg-[#f35525] w-[50px] h-[50px] hidden lg:block rounded-full absolute top-[-25px] right-[-25px]"></div>
               <div className="counter w-[270px] flex flex-row  justify-center rounded-md py-4 bg-[#FFEEE9] relative z-10">
                 <h2
                   className="text-3xl font-bold text-[#f35525] mr-[25px]"
@@ -87,7 +87,7 @@ export const VideoSection = () => {
               </div>
             </div>
             <div className="lg:w-[270px] w-full text-center p-4 relative">
-              <div className="bg-[#f35525] w-[50px] h-[50px] rounded-full absolute top-[-25px] right-[-25px]"></div>
+              <div className="bg-[#f35525] w-[50px] h-[50px] hidden lg:block rounded-full absolute top-[-25px] right-[-25px]"></div>
               <div className="counter w-[270px] flex flex-row  justify-center rounded-md py-4 bg-[#FFEEE9] relative z-10">
                 <h2
                   className="text-3xl font-bold text-[#f35525] mr-[25px]"

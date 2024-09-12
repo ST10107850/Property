@@ -14,8 +14,8 @@ export const BestDealSection = () => {
     <div className="section best-deal py-16 bg-gray-100">
       <div className="container mx-auto">
         <div className="flex flex-wrap">
-          <div className="w-full flex items-center">
-            <div className="section-heading text-center px-3 w-1/3 h-[220px]">
+          <div className="w-full flex md:flex-row flex-col items-center">
+            <div className="section-heading text-center px-3 md:w-1/3 h-[220px]">
               <h6 className="text-[#f35525] text-base font-bold uppercase">
                 | Best Deal
               </h6>
@@ -23,8 +23,8 @@ export const BestDealSection = () => {
                 Find Your Best Deal Right Now!
               </h2>
             </div>
-            <div className="nav-wrapper w-full mb-4">
-              <ul className="flex justify-end  mt-[-35px] space-x-2">
+            <div className="nav-wrapper w-full mb-[50px] md:mb-4">
+              <ul className="flex md:justify-end justify-center  md:mt-[-35px] space-x-2">
                 <li className="nav-item">
                   <button
                     className={`nav-link px-[25px] py-2 rounded-md ${
@@ -66,8 +66,8 @@ export const BestDealSection = () => {
           </div>
           <div className="w-full">
             {activeTab === "appartment" && (
-              <div className="flex flex-wrap">
-                <div className="lg:w-1/4 w-full px-3">
+              <div className="flex flex-wrap justify-center items-center mx-10">
+                <div className="lg:w-1/4 w-full px-3  mb-[45px]">
                   <div className="info-table bg-white rounded-md shadow-md px-[30px] py-[35px]">
                     <ul>
                       <li className="flex justify-between text-sm pb-6 mb-6 text-[#AAAAAA] font-bold border-b border-gray-300">
@@ -93,11 +93,11 @@ export const BestDealSection = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="lg:w-1/2 w-full px-3">
+                <div className="lg:w-1/2 w-full px-3 md:mb-0 mb-[45px]">
                   <img
                     src={deal}
                     alt="Appartment"
-                    className="w-full h-auto rounded-md px-[45px]"
+                    className="w-full h-auto rounded-md md:px-[45px]"
                   />
                 </div>
                 <div className="lg:w-1/4 w-full px-3">
@@ -128,8 +128,8 @@ export const BestDealSection = () => {
               </div>
             )}
             {activeTab === "villa" && (
-              <div className="flex flex-wrap">
-                <div className="lg:w-1/4 w-full px-3">
+              <div className="flex flex-wrap mx-10">
+                <div className="lg:w-1/4 w-full px-3 mb-[45px]">
                   <div className="info-table bg-white rounded-md shadow-md px-[30px] py-[35px]">
                     <ul>
                       <li className="flex justify-between text-sm pb-6 mb-6 text-[#AAAAAA] font-bold border-b border-gray-300">
@@ -155,11 +155,11 @@ export const BestDealSection = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="lg:w-1/2 w-full px-3">
+                <div className="lg:w-1/2 w-full px-3  mb-[45px]">
                   <img
                     src={deal2}
                     alt="Villa House"
-                    className="w-full h-auto rounded-md px-[45px]"
+                    className="w-full h-auto rounded-md md:px-[45px]"
                   />
                 </div>
                 <div className="lg:w-1/4 w-full p-4">
@@ -190,8 +190,8 @@ export const BestDealSection = () => {
               </div>
             )}
             {activeTab === "penthouse" && (
-              <div className="flex flex-wrap">
-                <div className="lg:w-1/4 w-full px-3">
+              <div className="flex flex-wrap mx-10">
+                <div className="lg:w-1/4 w-full px-3 mb-[45px]">
                   <div className="info-table bg-white rounded-md shadow-md px-[30px] py-[35px]">
                     <ul>
                       <li className="flex justify-between text-sm pb-6 mb-6 text-[#AAAAAA] font-bold border-b border-gray-300">
@@ -217,11 +217,11 @@ export const BestDealSection = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="lg:w-1/2 w-full px-3">
+                <div className="lg:w-1/2 w-full px-3 mb-[45px]">
                   <img
                     src={deal3}
                     alt="Penthouse"
-                    className="w-full h-auto rounded-md px-[45px]"
+                    className="w-full h-auto rounded-md md:px-[45px]"
                   />
                 </div>
                 <div className="lg:w-1/4 w-full px-3">

@@ -25,7 +25,7 @@ const Contact = () => {
         <div className="container mx-auto">
           <div className="flex flex-wrap -mx-4">
             <div className="w-full lg:w-7/12 px-4">
-              <div id="map" className="mb-8">
+              <div id="map" className="mb-16">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.063549741016!2d28.029322625414796!3d-26.1946109270825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1b6c0d6957%3A0xfbe0d8fbd0b2ad62!2sTshimologong%20Precinct!5e0!3m2!1sen!2sza!4v1726061548298!5m2!1sen!2sza"
                   width="100%"
@@ -36,11 +36,11 @@ const Contact = () => {
                 ></iframe>
               </div>
 
-              <div className="flex flex-wrap -mx-4">
-                <div className="w-full lg:w-1/2 px-4">
-                  <div className="item phone flex items-center mb-6">
+              <div className="flex flex-wrap mx-4 ">
+                <div className="w-full md:w-1/2 rounded-lg shadow-2xl mb-5">
+                  <div className="item phone flex items-center px-4 py-8 ">
                     <img src={phone} alt="" className="w-12 h-12 mr-4" />
-                    <h6 className="text-lg font-medium">
+                    <h6 className="text-lg font-medium max-w-full">
                       (079) 945-3446
                       <br />
                       <span className="text-sm text-gray-500">
@@ -49,10 +49,10 @@ const Contact = () => {
                     </h6>
                   </div>
                 </div>
-                <div className="w-full lg:w-1/2 px-4">
-                  <div className="item email flex items-center mb-6">
-                    <img src={email} alt="" className="w-12 h-12 mr-4" />
-                    <h6 className="text-lg font-medium">
+                <div className="w-full md:w-1/2 mb-[45px]">
+                  <div className="item email flex items-center px-4 py-8 bg-white rounded-lg shadow-2xl">
+                    <img src={email} alt="email" className="w-12 h-12 mr-4" />
+                    <h6 className="md:text-lg text-sm font-medium break-words max-w-full">
                       samuelnhlakanipho08@gmail.com
                       <br />
                       <span className="text-sm text-gray-500">
@@ -64,7 +64,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="w-full lg:w-5/12 rounded-lg shadow-md bg-white px-8 py-7">
+            <div className="w-full md:w-5/12 rounded-lg shadow-md bg-white px-8 py-7 md:mx-0 mx-12">
               <form
                 id="contact-form"
                 action=""

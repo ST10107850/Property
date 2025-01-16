@@ -105,15 +105,41 @@ export const BestDealSection = () => {
                     Extra Info About Property
                   </h4>
                   <p className="text-gray-600 mb-8">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua
-                    quised ipsum suspendisse.
+                    Property details are the facts about a property, such as its
+                    size, number of rooms, and amenities. When writing a
+                    property description, you can include details about the
+                    property's layout, rooms, common areas, and quality.
                     <br />
                     <br />
-                    When you need free CSS templates, you can simply type
-                    TemplateMo in any search engine website. In addition, you
-                    can type TemplateMo Portfolio, TemplateMo One Page Layouts,
-                    etc.
+                    <ul>
+                    <li>
+                      <strong>Size:</strong> The property's total square footage{" "}
+                    </li>
+                    <li>
+                      <strong>Rooms</strong>: The number of bedrooms and
+                      bathrooms{" "}
+                    </li>
+                    <li>
+                      <strong>Amenities:</strong>
+                      Features like a pool, fireplace, or high-speed internet
+                    </li>
+                    <li>
+                      <strong>Quality: </strong>The materials used, cleanliness,
+                      and maintenance level{" "}
+                    </li>
+                    <li>
+                      <strong>Location:</strong> The neighborhood or area where
+                      the property is located{" "}
+                    </li>
+                    <li>
+                      <strong>Views:</strong> Whether the property has views of
+                      a skyline, water, or mountains{" "}
+                      <li>
+                        <strong>Features:</strong> Special features in the
+                        property, such as a spa-like shower or walk-in closet
+                      </li>
+                    </li>
+                  </ul>
                   </p>
                   <div className="icon-button">
                     <a

@@ -8,14 +8,14 @@ const Footer = () => {
         <p className="text-gray-400 text-sm">
           Copyright © 2024 Nhlakanipho Samuel Nsundwane. All rights reserved. 
           <br />
-          Design: 
+          Design:  
           <a 
             rel="nofollow" 
             href="" 
             target="_blank" 
             className="text-orange-500 hover:text-orange-600 transition-colors"
           >
-            Nhlakanipho Samuel Nsundwane
+             Nhlakanipho Samuel Nsundwane
           </a>
         </p>
       </div>

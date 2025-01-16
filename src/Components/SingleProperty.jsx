@@ -1,4 +1,3 @@
-
 import single from "../assets/images/single-property.jpg";
 import infoIcon01 from "../assets/images/info-icon-01.png";
 import infoIcon02 from "../assets/images/info-icon-02.png";
@@ -8,7 +7,6 @@ import infoIcon04 from "../assets/images/info-icon-04.png";
 const SingleProperty = () => {
   return (
     <>
-     
       {/* Main Content Section */}
       <div className="single-property section py-12 md:mx-0 mx-20">
         <div className="container mx-auto">
@@ -24,39 +22,57 @@ const SingleProperty = () => {
               </div>
               <div className="main-content">
                 <div className="mt-10">
-                <span className="category text-gray-500 bg-[#F8D9CF] py-1 px-3 text-sm">
-                  Apartment
-                </span>
+                  <span className="category text-gray-500 bg-[#F8D9CF] py-1 px-3 text-sm">
+                    Apartment
+                  </span>
                 </div>
                 <h4 className="text-2xl font-bold mt-6 mb-10 pb-10">
                   24 New Street Miami, OR 24560
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Get <strong>the best villa agency</strong> HTML CSS Bootstrap
-                  Template for your company website. TemplateMo provides you the
-                  <a
-                    href="https://www.google.com/search?q=best+free+css+templates"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500"
-                  >
-                    {" "}
-                    best free CSS templates
-                  </a>{" "}
-                  in the world. Please tell your friends about it. Thank you. Cloud bread kogi bitters pitchfork 
-                  shoreditch tumblr yr succulents single-origin coffee schlitz enamel
-                   pin you probably haven't heard of them ugh hella.
-
-                   <br/><br/>When you look for free CSS templates, you can simply type TemplateMo 
-                   in any search engine website. In addition, you can type TemplateMo Digital Marketing,
-                    TemplateMo Corporate Layouts, etc. Master cleanse +1 intelligentsia swag post-ironic,
-                     slow-carb chambray knausgaard PBR&B DSA poutine neutra cardigan hoodie pop-up.
-         
+                  Property details are the facts about a property, such as its
+                  size, number of rooms, and amenities. When writing a property
+                  description, you can include details about the property's
+                  layout, rooms, common areas, and quality.
+                  <br />
+                  <br />
+                  <ul>
+                    <li>
+                      <strong>Size:</strong> The property's total square footage{" "}
+                    </li>
+                    <li>
+                      <strong>Rooms</strong>: The number of bedrooms and
+                      bathrooms{" "}
+                    </li>
+                    <li>
+                      <strong>Amenities:</strong>
+                      Features like a pool, fireplace, or high-speed internet
+                    </li>
+                    <li>
+                      <strong>Quality: </strong>The materials used, cleanliness,
+                      and maintenance level{" "}
+                    </li>
+                    <li>
+                      <strong>Location:</strong> The neighborhood or area where
+                      the property is located{" "}
+                    </li>
+                    <li>
+                      <strong>Views:</strong> Whether the property has views of
+                      a skyline, water, or mountains{" "}
+                      <li>
+                        <strong>Features:</strong> Special features in the
+                        property, such as a spa-like shower or walk-in closet
+                      </li>
+                    </li>
+                  </ul>
                 </p>
               </div>
 
               {/* Accordion */}
-              <div className="accordion mt-6 bg-gray-50 rounded-xl" id="accordionExample">
+              <div
+                className="accordion mt-6 bg-gray-50 rounded-xl"
+                id="accordionExample"
+              >
                 <div className="accordion-item border-b py-4 px-5">
                   <h2 className="accordion-header" id="headingOne">
                     <button

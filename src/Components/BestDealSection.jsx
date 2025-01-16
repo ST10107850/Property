@@ -11,7 +11,7 @@ export const BestDealSection = () => {
   };
 
   return (
-    <div className="section best-deal py-16 bg-gray-100">
+    <div className="section best-deal py-16 bg-gray-100 md:px-0 px-20">
       <div className="container mx-auto">
         <div className="flex flex-wrap">
           <div className="w-full flex md:flex-row flex-col items-center">

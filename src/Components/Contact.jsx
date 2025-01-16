@@ -21,7 +21,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="contact-content mt-[-250px] py-12">
+      <div className="contact-content mt-[-250px] py-12 md:px-0 px-20">
         <div className="container mx-auto">
           <div className="flex flex-wrap -mx-4">
             <div className="w-full lg:w-7/12 px-4">
@@ -36,9 +36,9 @@ const Contact = () => {
                 ></iframe>
               </div>
 
-              <div className="flex flex-wrap mx-4 ">
-                <div className="w-full md:w-1/2 rounded-lg shadow-2xl mb-5">
-                  <div className="item phone flex items-center px-4 py-8 ">
+              <div className="flex flex-wrap mx-4">
+                <div className="w-full md:w-1/2 ">
+                  <div className="item phone flex items-center px-4 py-8 bg-white rounded-lg shadow-2xl ">
                     <img src={phone} alt="" className="w-12 h-12 mr-4" />
                     <h6 className="text-lg font-medium max-w-full">
                       (079) 945-3446

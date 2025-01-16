@@ -23,7 +23,7 @@ export const VideoSection = () => {
         </div>
       </div>
 
-      <div className="video-content mt-[-210px] ">
+      <div className="video-content mt-[-210px] md:px-0 px-20">
         <div className="container mx-auto">
           <div className="flex justify-center">
             <div className="relative lg:max-w-[1076px] ">
@@ -49,7 +49,7 @@ export const VideoSection = () => {
         </div>
       </div>
 
-      <div className="fun-facts py-16 bg-gray-100">
+      <div className="fun-facts py-16 bg-gray-100 md:px-0 px-20">
         <div className="container mx-auto">
           <div className="flex flex-wrap md:flex-row items-center justify-center">
             <div className="lg:w-[270px] md:mr-[200px] w-full text-center p-4 relative">

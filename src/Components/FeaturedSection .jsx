@@ -7,12 +7,16 @@ import infoIcon04 from "../assets/images/info-icon-04.png";
 
 const FeaturedSection = () => {
   return (
-    <div className="mt-[120px]">
+    <div className="mt-[120px] md:px-0 px-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap">
           {/* Left Column */}
           <div className="lg:w-1/3 w-full mb-8 lg:mb-0 relative md:pl-[55px]">
-            <img src={featuredImage} alt="Featured" className="w-full h-[60vh] md:h-auto" />
+            <img
+              src={featuredImage}
+              alt="Featured"
+              className="w-full h-[60vh] md:h-auto"
+            />
             {/* <a
               href="property-details.html"
               className="bg-[#f35525] h-[110px] w-[110px] absolute  transform -translate-x-1/2 bottom-[-10%] flex items-center justify-center rounded-full"

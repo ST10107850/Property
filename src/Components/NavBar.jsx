@@ -2,9 +2,14 @@ import { HiBars3CenterLeft } from "react-icons/hi2";
 import { useState } from "react";
 
 export const NavBar = () => {
-  const [isMenuBarOpen, setMenuBarOpen] = useState(false);
+  const [{isMenuBarOpen}, setMenuBarOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState("home"); // Ensure correct default tab
 
   const toogleMenuBar = () => setMenuBarOpen(!isMenuBarOpen);
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50 h-auto">
@@ -12,33 +17,54 @@ export const NavBar = () => {
         <div className="flex justify-between items-center py-4">
           <nav className="flex items-center justify-between w-full">
             {/* ***** Logo Start ***** */}
-            <a href="index.html" className="text-3xl font-bold">
+            <a href="/" className="text-3xl font-bold">
               <h1>Villa</h1>
             </a>
             {/* ***** Logo End ***** */}
 
             {/* ***** Menu Start (Desktop) ***** */}
-            <ul className="hidden md:flex space-x-8 text-xl text-gray-600 md:items-center">
+            <ul className="hidden md:flex space-x-8 text-xl md:items-center">
               <li>
-                <a href="index.html" className="text-[#f35525] font-semibold">
+                <a
+                  href="/"
+                  onClick={() => handleTabClick("home")}
+                  className={`${
+                    activeTab === "home" ? "text-[#f35525] font-semibold" : "text-gray-600"
+                  } hover:text-[#f35525]`}
+                >
                   Home
                 </a>
               </li>
               <li>
-                <a href="properties.html" className="hover:text-[#f35525]">
+                <a
+                  href="/properties"
+                  onClick={() => handleTabClick("properties")}
+                  className={`${
+                    activeTab === "properties" ? "text-[#f35525] font-semibold" : "text-gray-600"
+                  } hover:text-[#f35525]`}
+                >
                   Properties
                 </a>
               </li>
               <li>
                 <a
-                  href="property-details.html"
-                  className="hover:text-[#f35525]"
+                  href="/property-details"
+                  onClick={() => handleTabClick("property-details")}
+                  className={`${
+                    activeTab === "property-details" ? "text-[#f35525] font-semibold" : "text-gray-600"
+                  } hover:text-[#f35525]`}
                 >
                   Property Details
                 </a>
               </li>
               <li>
-                <a href="contact.html" className="hover:text-[#f35525]">
+                <a
+                  href="/contact"
+                  onClick={() => handleTabClick("contact")}
+                  className={`${
+                    activeTab === "contact" ? "text-[#f35525] font-semibold" : "text-gray-600"
+                  } hover:text-[#f35525]`}
+                >
                   Contact Us
                 </a>
               </li>
@@ -69,26 +95,49 @@ export const NavBar = () => {
         {isMenuBarOpen && (
           <ul className="flex flex-col pb-3 space-y-4 text-xl text-gray-600 mt-4 md:hidden">
             <li>
-              <a href="index.html" className="text-[#f35525] font-semibold">
+              <a
+                href="/"
+                onClick={() => handleTabClick("home")}
+                className={`${
+                  activeTab === "home" ? "text-[#f35525] font-semibold" : "text-gray-600"
+                } hover:text-[#f35525]`}
+              >
                 Home
               </a>
             </li>
             <li>
-              <a href="properties.html" className="hover:text-[#f35525]">
+              <a
+                href="/properties"
+                onClick={() => handleTabClick("properties")}
+                className={`${
+                  activeTab === "properties" ? "text-[#f35525] font-semibold" : "text-gray-600"
+                } hover:text-[#f35525]`}
+              >
                 Properties
               </a>
             </li>
             <li>
-              <a href="property-details.html" className="hover:text-[#f35525]">
+              <a
+                href="/property-details"
+                onClick={() => handleTabClick("property-details")}
+                className={`${
+                  activeTab === "property-details" ? "text-[#f35525] font-semibold" : "text-gray-600"
+                } hover:text-[#f35525]`}
+              >
                 Property Details
               </a>
             </li>
             <li>
-              <a href="contact.html" className="hover:text-[#f35525]">
+              <a
+                href="/contact"
+                onClick={() => handleTabClick("contact")}
+                className={`${
+                  activeTab === "contact" ? "text-[#f35525] font-semibold" : "text-gray-600"
+                } hover:text-[#f35525]`}
+              >
                 Contact Us
               </a>
             </li>
-            
           </ul>
         )}
       </div>
